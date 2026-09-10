@@ -1,0 +1,10 @@
+.dest-card-lg {
+  aspect-ratio: 4 / 3;
+}
+.dest-card-lg .dest-card-overlay .badge {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+.dest-card-lg .dest-card-overlay {
+  gap: 2px;
+}

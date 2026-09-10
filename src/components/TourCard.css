@@ -1,0 +1,85 @@
+.tour-card-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+.tour-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.tour-card:hover .tour-card-media img {
+  transform: scale(1.05);
+}
+.tour-card-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.tour-card-cat {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.92);
+}
+.tour-card-body {
+  padding: 20px 22px 22px;
+}
+.tour-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-green);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+.tour-card-title {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+.tour-card-title a:hover {
+  color: var(--color-primary-green);
+}
+.tour-card-tagline {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+.tour-card-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+}
+.tour-card-price-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-body);
+  margin-bottom: 2px;
+}
+.tour-card-price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-ink);
+}
+.tour-card-link {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-gradient);
+  color: var(--color-white);
+  transition: transform 0.2s ease;
+}
+.tour-card:hover .tour-card-link {
+  transform: translateX(4px);
+}

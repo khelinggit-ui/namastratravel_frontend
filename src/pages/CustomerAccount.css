@@ -1,0 +1,29 @@
+.account-page { min-height: calc(100vh - 90px); padding: 70px 0 110px; background: var(--color-surface); }
+.account-shell { max-width: 980px; }
+.account-card { max-width: 520px; margin: 0 auto; padding: 42px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.account-card h1, .account-heading-row h1 { margin: 8px 0; font-size: clamp(2rem, 4vw, 3rem); }
+.account-intro, .account-heading-row p { margin: 0; }
+.account-form { display: grid; gap: 18px; margin-top: 28px; }
+.account-form label { display: grid; gap: 7px; color: var(--color-ink); font-size: .9rem; font-weight: 600; }
+.account-form input { width: 100%; padding: 12px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: #fff; color: var(--color-ink); }
+.account-form input:focus { outline: none; border-color: var(--color-primary-green); box-shadow: 0 0 0 4px rgba(31,174,100,.1); }
+.account-form .btn { width: 100%; margin-top: 4px; }
+.account-error { color: #c0392b; }
+.account-note { margin: 24px 0 8px; color: var(--color-body); font-size: .85rem; }
+.account-back-link { color: var(--color-primary-green); font-weight: 600; font-size: .9rem; }
+.account-heading-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+.account-heading-row .btn { flex-shrink: 0; }
+.account-empty { padding: 34px; text-align: center; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.booking-history-list { display: grid; gap: 16px; }
+.booking-history-item { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; padding: 26px; background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.booking-history-details { display: grid; gap: 18px; }
+.booking-invoice-button { justify-self: end; font-size: .82rem; }
+.booking-invoice-button:disabled { cursor: not-allowed; opacity: .5; }
+.booking-history-label { color: var(--color-primary-green); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.booking-history-item h2 { margin: 6px 0; font-size: 1.25rem; }
+.booking-history-item p { margin: 0; font-size: .9rem; }
+.booking-history-item dl { display: grid; gap: 12px; margin: 0; }
+.booking-history-item dl div { display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid var(--color-border); padding-bottom: 8px; }
+.booking-history-item dt { color: var(--color-body); font-size: .8rem; }
+.booking-history-item dd { margin: 0; color: var(--color-ink); font-size: .85rem; font-weight: 600; text-align: right; }
+@media (max-width: 650px) { .account-page { padding-top: 36px; } .account-card { padding: 26px 20px; } .account-heading-row { display: block; } .account-heading-row .btn { margin-top: 18px; } .booking-history-item { grid-template-columns: 1fr; gap: 20px; padding: 20px; } .booking-invoice-button { justify-self: stretch; } }

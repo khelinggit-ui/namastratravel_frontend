@@ -1,0 +1,140 @@
+.about-intro {
+  align-items: center;
+  gap: 48px;
+}
+.about-media {
+  position: relative;
+}
+.about-media img {
+  border-radius: var(--radius-lg);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+.about-media-badge {
+  position: absolute;
+  right: -18px;
+  bottom: 22px;
+  background: var(--color-gradient);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}
+.about-media-badge strong {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+}
+.about-media-badge span {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+.about-text p:last-of-type {
+  margin-bottom: 28px;
+}
+.about-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Visi & misi */
+.about-vm {
+  gap: 28px;
+}
+.vm-card {
+  padding: 34px;
+}
+.vm-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+.vm-card ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Values */
+.value-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--transition);
+}
+.value-item:hover {
+  box-shadow: var(--shadow-md);
+}
+.value-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: transparent;
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 1.2;
+}
+.value-item h3 {
+  font-size: 1.1rem;
+}
+.value-item p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+/* Stats band */
+.stats-band {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.stat-item strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.stat-item span {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 768px) {
+  .stats-band {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Legalitas */
+.legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.legal-text {
+  max-width: 480px;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name namastratravel.com www.namastratravel.com;
+
+    root /var/www/namastratravel/dist;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

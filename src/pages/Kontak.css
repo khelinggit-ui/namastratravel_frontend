@@ -1,0 +1,74 @@
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.kontak-list {
+  display: grid;
+  gap: 20px;
+}
+.kontak-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.kontak-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: 1.3rem;
+}
+.kontak-label {
+  display: block;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-body);
+  margin-bottom: 2px;
+}
+.kontak-item a,
+.kontak-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 0;
+}
+.kontak-item a:hover {
+  color: var(--color-primary-green);
+}
+.kontak-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.kontak-form {
+  padding: 34px;
+}
+.kontak-form h3 {
+  font-size: 1.4rem;
+}
+.kontak-form-note {
+  font-size: 0.92rem;
+  margin-bottom: 22px;
+}
+.kontak-map {
+  height: 420px;
+}
+.kontak-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+@media (max-width: 900px) {
+  .kontak-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
